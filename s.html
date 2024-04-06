@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Stop watch</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       body{
+        background: #edeaff;
+       }
+       .stopwatch{
+          display: grid;
+          width: 90%;
+          max-width: 600px;
+          background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(https://file.oyephoto.com/uploads/preview/sky-picsart-background-download-for-photo-editing-11635046689avmnuhueov.jpg);
+          background-size: cover;
+          background-position: center;
+          text-align: center;
+          padding: 40px 0;
+          color: #fff;
+          margin: 200px auto 0;
+          box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+       }
+       .stopwatch h1{
+        margin-top: 60px;
+        font-size: 64px;
+        font-weight: 300;
+     }
+     .buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+
+     }
+     .buttons img{
+        width: 50px;
+        margin: 0 20px;
+        cursor: pointer;
+       
+     }
+     .buttons img:nth-child(2){
+        width: 80px;
+       
+     }
+    </style>
+</head>
+<body>
+<div class="stopwatch">
+    <h1 id="displayTime">00:00:00</h1>
+    <div class="buttons">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS30Bm1g8m3aNxKwfA6-Fk1nDxBrOwHcNsop_00QuGVtSD_p9LbLv6gibG_dRVOo-L_DI&usqp=CAU" onclick="watchStop()" >
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2M85dafxOGMxDScGXTLs1MDk1D95EG2qtgneT0JSCeEZDmAxCdH1Amqdw0G_vLcxD3ZU&usqp=CAU" onclick="watchStart()">
+        <img src="https://t3.ftcdn.net/jpg/00/20/94/60/360_F_20946011_SNe35QmHfPbfhRiNtzAjBzQHtquhiLS0.jpg" onclick="watchReset()">
+        
+    </div>
+</div>
+</div>
+</body>
+<script src="stop.js">
+
+</script>
+</html>
