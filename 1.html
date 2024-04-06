@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meesho</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+          
+
+        }
+    nav{
+       
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       justify-content: space-around;
+       border: 1px solid gray;
+       
+    
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 2vh;
+        margin-top: 10px;
+        height: 15vh;
+    }
+    .icon{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 15vw;
+        margin-top: -50px;
+       
+    }
+           
+    nav img{
+            width: 15.5%;
+            margin-top: -60px;
+        }
+        
+        
+        nav .down{
+            display: flex;
+            align-items: center;
+           
+            justify-content: space-around;
+            font-size: 15px;
+            margin-top: -50px;
+
+
+
+        }
+        .down p{
+            margin-left: 20px;
+        }
+        nav .down i{
+            margin-inline: 10px;
+        }
+       
+        nav input{ 
+            width: 320px;
+            height: 40px;
+            margin-top: -55px;
+            outline: none;
+          
+
+        }
+        .sec-nav{
+            display: flex;
+            justify-content: space-around;
+            border: 1px solid gray;
+            border-left: none;
+            border-right: none;
+           
+            padding: 20px;
+            margin-top: -60px;
+            font-weight: 600;
+        }
+        .sec-nav p:hover{
+          color: rgb(227, 91, 114);
+          cursor: pointer;
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+        .main .text h1{
+           
+            font-size: 54px;
+            margin-top: 11px;
+            margin-left: 10px;
+        }
+        .main .text .txt{
+            display: flex;
+            justify-content: center;
+        }
+        .main .text .txt h2{
+            margin-inline: 11px;
+            font-size: 23px;
+            margin-top: 22px;
+        }
+        .main .text button{
+            width: 300px;
+            height: 45px;
+            font-size: large;
+            background-color: purple;
+            color: white;
+            border-radius: 4px;
+            border: none;
+            margin-left: 50px;
+        }
+        .main .text button:hover{
+            background-color: transparent;
+            border:  3 px solid purple;
+            color: purple;
+        }
+        .top-cat h1{
+            text-align: center;
+            margin-top: 44px;
+            padding: 22px;
+        }
+        .top-cat .ws{
+            display: flex;
+            justify-content: center;
+           background-color: blanchedalmond;
+          margin-left: 200px;
+           width: 1100px;
+        
+        }
+
+        .top-cat .ws-text{
+            width: 500px;
+            background-color: rgb(203, 193, 179);
+        }
+        .top-cat .ws-text h1{
+            font-size: 65px;
+            margin-top: 43px;
+        }
+        .seller h1{
+            text-align: center;
+            margin-top: 33px;
+            padding: 33px;
+            font-size: 44px;
+
+        }
+        .seller img{
+            width: 1100px;
+            margin-left: 200px;
+
+        }
+        h1{
+            text-align: center;
+            font-size: 44px;
+            margin-top: 33px;
+            padding: 33px;
+        }
+        .card{
+            margin-top: 33px;
+        }
+        .crd{
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            text-align: center;
+        }
+        .crd .img{
+            border: 1px solid rgb(238, 228, 228);
+        }
+        .crd .img img{
+            width:80%;
+        }
+        .footer{
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            margin-top: 44px;
+            padding: 55px;
+            background-color: rgb(176, 220, 228);
+        }
+        .footer .icons{
+            display: flex;
+        }
+        .footer .list .icons i{
+            margin-inline: 11px ;
+            font-size: 30px;
+        }
+        .footer .list1{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .footer .list .fc{
+            color: blue;
+        }
+        .footer .list .inst{
+            color: rgb(208, 25, 135);
+        }
+        .footer .list .twt{
+            color: blue;
+        }
+        .footer .list .yt{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+           <img src="data:image/png;base64,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">
+            <input type="text" placeholder="Try Saree, Kurthi or Search by Product Code">
+            <div class="down">
+                <i class="fa fa-mobile-phone" style="font-size:36px"></i>
+                  <p>Download App</p>
+                  <p>Become a Supplier</p>
+                  <p>News room</p>
+            </div>
+                <div class="icon">
+                   <div class="prof">
+                       <i class="fa fa-user-circle-o" style="font-size:36px"></i>
+                       <p>Profile</p>
+                    </div>
+                   <div class="Cart">
+                      <i class="fa fa-shopping-cart" style="font-size:36px"></i>
+                       <p>Cart</p>
+                    </div>
+                </div>
+        </div>
+    </nav>
+    
+    <div class="sec-nav">
+        <p>Women Ethnic</p>
+        <p> Women Western</p>
+        <p>Men</p>
+        <p> Kid</p>
+        <p>Home & Kitchen</p>
+        <p>Jwellery & Accessories</p>
+        <p>Bag & Footwear</p>
+        <p>Electronics</p>
+        
+    </div>
+    <div class="main">
+        <div class="text">
+            <h1> Lowest Prices <br>
+                Best Quality Shopping
+            </h1>
+            <div class="txt">
+                <h2>Free <br>Delivery</h2>
+                <h2> Cash <br>on Delivery</h2>
+                <h2> Easy <br>returns</h2>
+            </div> <br>
+            <button> Download the meesho app</button>
+        </div>
+        <img src="https://images.meesho.com/images/marketing/1705642331297_512.webp"  >
+    </div>
+    <div class="top-cat">
+        <h1> Top Categories to choose from
+        </h1>
+        <div class="ws">
+            <img src="https://images.meesho.com/images/marketing/1701835320853_400.webp" >
+            <img src="https://images.meesho.com/images/marketing/1692191045019_300.webp" alt="">
+            <img src="https://images.meesho.com/images/marketing/1692191103963_300.webp" alt="">
+            
+        </div>
+    </div>
+    <div class="seller">
+        <h1> Become a seller</h1>
+        <img src="https://images.meesho.com/images/pow/downloadBannerDesktop_1050.webp" >
+    </div>
+    <h1> Products For You</h1>
+    <div class="card">
+        <div class="crd">
+            <div class="img">
+                <img src="https://images.meesho.com/images/products/60127064/xd5cl_400.webp" alt="" style="height: 300px; width: 200px;">
+                <h2>Pretty style Girls frocks</h2>
+                <h2>$383</h2>
+            </div>
+            <div class="img">
+                <img src="https://images.meesho.com/images/products/140598391/c9iqf_400.webp" alt="" style="height: 300px; width: 200px;">
+                <h2>Trendy Mens T-shirt</h2>
+                <h2>$168</h2>
+            </div>
+            <div class="img">
+                <img src="https://images.meesho.com/images/products/19267723/emq78_400.webp" alt="" style="height: 300px;width: 200px;">
+                <h2> Stylish Women watches</h2>
+                <h2>$166</h2>
+            </div>
+            <div class="img">
+                <img src="https://images.meesho.com/images/products/73377846/y05nx_400.webp" alt="" style="height: 300px;width: 200px;">
+                <h2>Fancy designer women T-shirt</h2>
+                <h2>$185</h2>
+            </div>
+        </div>
+
+    </div>
+    <div class="card">
+        <div class="crd">
+            <div class="img">
+                <img src="https://images.meesho.com/images/products/25515256/a6300_400.webp" alt="" style="height: 300px;width: 200px;">
+                <h2>Graceful wall clocks</h2>
+                <h2>$179</h2>
+            </div>
+            <div class="img">
+                <img src="https://images.meesho.com/images/products/49349990/cpd0a_400.webp" alt="" style="height: 300px;width: 200px;">
+                <h2>myra women kurtha</h2>
+                <h2>$377</h2>
+            </div>
+            <div class="img">
+                <img src="https://images.meesho.com/images/products/20393758/htrro_400.webp" alt="" style="height: 300px;width: 200px;">
+                <h2>Fancy latest women kurthi</h2>
+                <h2>$263</h2>
+            </div>
+            <div class="img">
+                <img src="https://images.meesho.com/images/products/42182017/gtwro_400.webp" alt="" style="height: 300px;width: 200px;">
+                <h2>Fancy latest women shirts</h2>
+                <h2>$253</h2>
+            </div>
+        </div>
+        <div class="card">
+            <div class="crd">
+                <div class="img">
+                    <img src="https://images.meesho.com/images/products/60127064/xd5cl_400.webp" alt="" style="height: 300px;width: 200px;">
+                    <h2>Pretty style Girls frocks</h2>
+                    <h2>$383</h2>
+                </div>
+                <div class="img">
+                    <img src="https://images.meesho.com/images/products/140598391/c9iqf_400.webp" alt="" style="height: 300px;width: 200px;">
+                    <h2>Trendy Mens T-shirt</h2>
+                    <h2>$168</h2>
+                </div>
+                <div class="img">
+                    <img src="https://images.meesho.com/images/products/19267723/emq78_400.webp" alt="" style="height: 300px;width: 200px;">
+                    <h2> Stylish Women watches</h2>
+                    <h2>$166</h2>
+                </div>
+                <div class="img">
+                    <img src="https://images.meesho.com/images/products/73377846/y05nx_400.webp" alt="" style="height: 300px;width: 200px;">
+                    <h2>Fancy designer women T-shirt</h2>
+                    <h2>$185</h2>
+                </div>
+            </div>
+    
+        </div>
+    
+        <div class="card">
+            <div class="crd">
+                <div class="img">
+                    <img src="https://images.meesho.com/images/products/25515256/a6300_400.webp" alt="" style="height: 300px;width: 200px;">
+                    <h2>Graceful wall clocks</h2>
+                    <h2>$179</h2>
+                </div>
+                <div class="img">
+                    <img src="https://images.meesho.com/images/products/49349990/cpd0a_400.webp" alt="" style="height: 300px;width: 200px;" >
+                    <h2>myra women kurtha</h2>
+                    <h2>$377</h2>
+                </div>
+                <div class="img">
+                    <img src="https://images.meesho.com/images/products/20393758/htrro_400.webp" alt="" style="height: 300px;width: 200px;">
+                    <h2>Fancy latest women kurthi</h2>
+                    <h2>$263</h2>
+                </div>
+                <div class="img">
+                    <img src="https://images.meesho.com/images/products/42182017/gtwro_400.webp" alt="" style="height: 300px;width: 200px;">
+                    <h2>Fancy latest women shirts</h2>
+                    <h2>$253</h2>
+                </div>
+            </div>
+
+    </div>
+    <div class="footer">
+        <div class="list">
+            <h2>Shop Non-Stop on Meesho</h2>
+            <p>Trusted by more than 1 Crore Indians <br>
+                Cash on Delivery | Free Delivery</p>
+        </div>
+        <div class="list">
+
+            <p>Careers</p>
+            <p>Become a supplier</p>
+            <p>Hall of Fame</p>
+            <p>Sitemap</p>
+            
+        </div>
+        <div class="list">
+            <p>Legal and Policies </p> 
+            <p>Meesho Tech Blog</p>
+            <p>Notices and Returns</p>
+            
+        </div>
+        <div class="list">
+            <h2>Reach Out Us</h2><br>
+            <div class="list1">
+            <div class="fc"><i class="fa fa-facebook-square" style="font-size:36px"></i></div>
+            <div class="inst"><i class="fa fa-instagram" style="font-size:36px"></i></div>
+          <div class="twt"> <i class="fa fa-twitter" style="font-size:36px"></i></div>
+          <div class="yt"> <i class="fa fa-youtube" style="font-size:36px"></i></div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
